@@ -1,0 +1,8 @@
+#Burdyniuk Ilya - vk social analysis on groups by their ids
+
+Main script is collect.py which controls other scripts.
+You must only write group's id and start the script.
+By the end you will find 4 folder "members, friends, links, graph".
+In the "graph" you will find files for gephi to create the visual graph.
+
+Needs only requests!
