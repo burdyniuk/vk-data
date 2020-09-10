@@ -22,8 +22,8 @@ def get_friends():
 	i = 0
 
 	for user in os.listdir("./members"):
-		if user == "." or user == "..":
-			pass
+		if user == "." or user == ".." or user == ".DS_Store":
+			continue
 		else:
 			user = "./members/"+user
 			f = open(user, "r")
@@ -46,7 +46,7 @@ def get_friends():
 
 				if "error" in result:
 					f = open("./links/"+str(user_id)+".json", "w")
-					json.dump("[]", f)
+					json.dump("", f)
 					f.close()
 					break
 
