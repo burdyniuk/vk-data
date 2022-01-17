@@ -6,7 +6,7 @@ import os
 import os.path
 
 def get_friends():
-	token = "f3299f9b959903f726b72526b2a7240b8705a5b79ba413ebeb7f29488c7318bf79852c01f52c5a7677220"
+	token = "TOKEN"
 	offset = 0
 
 	if os.path.exists("./friends"):
